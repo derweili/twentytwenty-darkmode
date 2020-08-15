@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+body.darkmode {
+    background-color: $dark_background;
+
+    #site-header {
+        background-color: $dark_background;
+    }
+
+    .entry-header {
+        background-color: #222;
+        color: white;
+    }
+
+    #site-content {
+        color: white
+    }
+
+    .footer-nav-widgets-wrapper {
+        background-color: $dark_background;
+        color: white;
+    }
+
+    .footer-widgets-outer-wrapper {
+        border-bottom: none;
+    }
+
+    #site-footer {
+        background-color: #222;
+        color: white;
+    }
+}

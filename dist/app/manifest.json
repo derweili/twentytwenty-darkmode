@@ -1,0 +1,57 @@
+{
+  "editor.css": "app/editor.css",
+  "editor.css.map": "app/editor.css.map",
+  "editor.js": "app/editor.js",
+  "editor.js.map": "app/editor.js.map",
+  "main.css": "app/main.css",
+  "main.css.map": "app/main.css.map",
+  "main.js": "app/main.js",
+  "main.js.map": "main.9f9b5f87ae96875d7812.hot-update.js.map",
+  "runtime.js": "app/runtime.js",
+  "runtime.js.map": "app/runtime.js.map",
+  "vendors~editor.js": "app/vendors~editor.js",
+  "vendors~editor.js.map": "app/vendors~editor.js.map",
+  "vendors~editor~main.js": "app/vendors~editor~main.js",
+  "vendors~editor~main.js.map": "app/vendors~editor~main.js.map",
+  "vendors~main.js": "app/vendors~main.js",
+  "vendors~main.js.map": "app/vendors~main.js.map",
+  "wpackioEp": {
+    "main": {
+      "js": [
+        "app/runtime.js",
+        "app/vendors~editor~main.js",
+        "app/main.js"
+      ],
+      "js.map": [
+        "app/runtime.js.map",
+        "app/vendors~editor~main.js.map",
+        "app/main.js.map",
+        "main.9f9b5f87ae96875d7812.hot-update.js.map"
+      ],
+      "css": [
+        "app/main.css"
+      ],
+      "css.map": [
+        "app/main.css.map"
+      ]
+    },
+    "editor": {
+      "js": [
+        "app/runtime.js",
+        "app/vendors~editor~main.js",
+        "app/editor.js"
+      ],
+      "js.map": [
+        "app/runtime.js.map",
+        "app/vendors~editor~main.js.map",
+        "app/editor.js.map"
+      ],
+      "css": [
+        "app/editor.css"
+      ],
+      "css.map": [
+        "app/editor.css.map"
+      ]
+    }
+  }
+}

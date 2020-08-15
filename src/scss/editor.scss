@@ -1,0 +1,10 @@
+@import './variables.scss';
+
+.editor-styles-wrapper {
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.page-template-darkmode .editor-styles-wrapper{
+    color: white;
+    background-color: #333;
+}
