@@ -11,20 +11,33 @@ const {
  */
 wp.domReady( () => {
 
+    // This element will get the extra class
     const editor = document.getElementById("editor");
+
+    // Helper function to get the template name
     const getTemplateName = () => select('core/editor').getEditedPostAttribute( 'template' )
 
+    // Variable for saving the current template name
     let templateName;
 
-    // // get element to attach the darkmode class
+    // Subscribe to editor changes
+    const checkRequiredField = subscribe( () => {
 
-	// 	// Subscribe to editor state changes.
-    let checkRequiredField = subscribe( () => {
-        console.log('subscribe');
+        // Get the "new" template new
+        const newTemplateName = getTemplateName();
 
-        // get the current template name
-        const newTemplateName = getTemplateName();    
+        /**
+         * Because the subscribe funciton is called very often,
+         * we should check whether a change relevant to us
+         * has been performed
+         */
         if( templateName !== newTemplateName ) {
+
+            /**
+             * Check if the dark mode template is active
+             * if true, add a new class the editor
+             * if false, remove the class from the editor
+             */ 
             if ( newTemplateName.includes('darkmode.php') ) {
                 editor.classList.add("page-template-darkmode");
             } else {
@@ -33,5 +46,5 @@ wp.domReady( () => {
         }
 
         templateName = newTemplateName;
-	})
+    })
 } );
